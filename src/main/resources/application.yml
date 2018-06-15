@@ -1,5 +1,28 @@
 server:
-  port: 17010
+  port: ${PORT:7079}
+
 spring:
   application:
-    name: hystrix-monitoring
+    name: hystrix-monitor
+  cloud:
+    discovery:
+      client:
+        health-indicator:
+          enabled: true
+
+turbine:
+  app-config: ZUUL-SERVER,CUSTOMER-SERVICE,ORDER-SERVICE
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://10.71.171.22}:${EUREKA_SERVER_PORT:7075}/eureka/
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
