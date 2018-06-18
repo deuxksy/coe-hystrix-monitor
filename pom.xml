@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sds.ces.hystrix.dashboard</groupId>
-    <artifactId>hystix-dashboard</artifactId>
+    <artifactId>hystrix-dashboard</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>hystix-dashboard</name>
+    <name>hystrix-dashboard</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>

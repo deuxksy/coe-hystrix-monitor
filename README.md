@@ -1,4 +1,4 @@
-# coe-hystrix-monitor
+# coe-hystrix-dashboard
 
 ## hystrix
 

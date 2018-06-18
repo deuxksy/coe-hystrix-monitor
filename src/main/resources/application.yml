@@ -1,9 +1,9 @@
 server:
-  port: ${PORT:7079}
+  port: ${PORT:7071}
 
 spring:
   application:
-    name: hystrix-monitor
+    name: hystrix-dashboard
   cloud:
     discovery:
       client:
