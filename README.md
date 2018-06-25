@@ -1,5 +1,1 @@
-# coe-hystrix-dashboard
-
-## hystrix
-
-## dashboard
+Spring Cloud Hystrix + Turbine + Dashboard

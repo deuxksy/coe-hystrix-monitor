@@ -17,17 +17,19 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.sds.ces'
 version = '0.0.1-SNAPSHOT'
+
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
 
 repositories {
     mavenCentral()
-    maven { url "https://repo.spring.io/snapshot" }
-    maven { url "https://repo.spring.io/milestone" }
-    maven { url "https://repo.spring.io/release" }
 }
 
 ext {
-    springCloudVersion = 'Finchley.RC2'
+    springCloudVersion = 'Finchley.RELEASE'
 }
 
 dependencies {
@@ -35,8 +37,10 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-actuator')
 
     //Spring Cloud Netflix
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard')
     compile('org.springframework.cloud:spring-cloud-starter-netflix-turbine')
+    compile('org.springframework.cloud:spring-cloud-config-client')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
