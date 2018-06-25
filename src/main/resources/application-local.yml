@@ -1,13 +1,13 @@
 spring:
   application:
-    name: hystrix-dashboard
+    name: hystrix-dashboard-local
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Turbine Options
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 turbine:
-  app-config: ZUUL-SERVER,CUSTOMER-SERVICE,ORDER-SERVICE
+  app-config: ZUUL-SERVER-LOCAL,CUSTOMER-SERVICE,ORDER-SERVICE
   aggregator:
     cluster-config: default
   cluster-name-expression: new String("default")

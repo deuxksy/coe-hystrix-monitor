@@ -1,4 +1,4 @@
-package com.sds.ces.hystix.dashboard.config;
+package com.sds.act.coe.hystix.dashboard.config;
 
 import com.netflix.appinfo.AmazonInfo;
 import org.springframework.beans.factory.annotation.Value;
